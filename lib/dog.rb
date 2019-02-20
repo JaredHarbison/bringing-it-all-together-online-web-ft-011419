@@ -57,7 +57,8 @@ class Dog
     WHERE name = ? AND breed = ?
     SQL
     dog = DB[:conn].execute(sql, name, breed).first 
-    if 
+    if dog 
+      new_dog = 
   
   def self.new_from_db(row) 
     hash_of_attributes = {
