@@ -51,10 +51,8 @@ class Dog
     end.first 
   end 
   
-  def self.find_or_create_by
-    if self.id 
-      self.update 
-    else 
+  def self.find_or_create_by(name:, breed:)
+    
   
   def self.new_from_db(row) 
     hash_of_attributes = {
