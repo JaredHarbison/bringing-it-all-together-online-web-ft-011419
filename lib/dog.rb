@@ -53,7 +53,9 @@ class Dog
   
   def self.new_from_db(row) 
     hash_of_attributes = {
-      
+      id: 
+      name:
+      breed:
     }
   
 end 
