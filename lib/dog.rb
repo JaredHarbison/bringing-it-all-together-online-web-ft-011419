@@ -57,6 +57,7 @@ class Dog
       :name => row[1],
       :breed => row[2]
     }
-    self.new.
+    self.new(hash_of_attributes)
+  end
   
 end 
