@@ -60,6 +60,7 @@ class Dog
     if dog 
       new_dog = self.new_from_db(dog)
     else 
+      new_dog = self.
   
   def self.new_from_db(row) 
     hash_of_attributes = {
