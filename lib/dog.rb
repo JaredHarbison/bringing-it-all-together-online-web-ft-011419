@@ -51,6 +51,11 @@ class Dog
     end.first 
   end 
   
+  def self.find_or_create_by
+    if self.id 
+      self.update 
+    else 
+  
   def self.new_from_db(row) 
     hash_of_attributes = {
       :id => row[0],
