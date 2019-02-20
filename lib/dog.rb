@@ -73,4 +73,8 @@ class Dog
     self.new(hash_of_attributes)
   end
   
+  def self.find_by_name
+    
+  end 
+  
 end 
