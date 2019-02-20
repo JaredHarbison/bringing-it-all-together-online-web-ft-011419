@@ -56,7 +56,7 @@ class Dog
     SELECT * FROM dogs 
     WHERE name = ? AND breed = ?
     SQL
-    
+    dog = DB[:conn].execute(sql, name, breed)
   
   def self.new_from_db(row) 
     hash_of_attributes = {
